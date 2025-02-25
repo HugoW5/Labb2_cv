@@ -1,0 +1,27 @@
+{
+  "name": "Hugo Wakt",
+  "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa id recusandae temporibus ducimus repellendus totam eum, ad harum asperiores dicta voluptates, voluptatibus dolores et, ullam explicabo. Saepe consectetur, doloremque nisi commodi odit similique aliquam assumenda quos eaque perspiciatis maiores?",
+  "github": "https://github.com/HugoW5",
+  "linkedin": "https://www.linkedin.com/in/hugo-wakt-32595a334/",
+  "email": "hugo05.wakt@gmail.com",
+  "workplaces": [
+    {
+      "name": "Ahlsell Jönköping",
+      "span": "2022 - 2023"
+    },
+    {
+      "name": "Arla Jönköping",
+      "span": "2023 - 2025"
+    }
+  ],
+  "education": [
+    {
+      "name": "LSB Jönköping",
+      "span": "2021-2024"
+    },
+    {
+      "name": "Systemutvecklare.NET",
+      "span": "2024-2026"
+    }
+  ]
+}
