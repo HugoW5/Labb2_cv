@@ -15,6 +15,7 @@
     />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css">
     <title>CV - Hem</title>
   </head>
   <body>
@@ -30,8 +31,9 @@
     <main>
       <section class="top-container">
         <header class="container-header">
-          <h1>Hugo Wakt</h1>
+          <h1 id="name_header"></h1>
           <a
+            id="github_link"
             href="https://github.com/HugoW5"
             target="_blank"
             aria-label="GitHub"
@@ -39,27 +41,26 @@
             <i class="fa-brands fa-github icon" aria-hidden="true"></i>
           </a>
           <a
+            id="linkedin_link"
             href="https://www.linkedin.com/in/hugo-wakt-32595a334/"
             target="_blank"
             aria-label="LinkedIn"
           >
             <i class="fa-brands fa-linkedin icon" aria-hidden="true"></i>
           </a>
-          <a href="mailto:hugo05.wakt@gmail.com" aria-label="E-post">
+          <a
+            id="email_link"
+            href="mailto:hugo05.wakt@gmail.com"
+            aria-label="E-post"
+          >
             <i class="fa-solid fa-envelope icon" aria-hidden="true"></i>
           </a>
         </header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          ipsa id recusandae temporibus ducimus repellendus totam eum, ad harum
-          asperiores dicta voluptates, voluptatibus dolores et, ullam explicabo.
-          Saepe consectetur, doloremque nisi commodi odit similique aliquam
-          assumenda quos eaque perspiciatis maiores?
-        </p>
+        <p id="info"></p>
         <div class="top-bottom-container">
           <section>
             <h2>Utbildning</h2>
-            <ul>
+            <ul id="educations">
               <li>LBS Jönköping<span class="time-span">2021 - 2024</span></li>
               <li>
                 Systemutvecklare.NET<span class="time-span">2024 - 2026</span>
@@ -68,7 +69,7 @@
           </section>
           <section>
             <h2>Arbetserfarenhet</h2>
-            <ul>
+            <ul id="workplaces">
               <li>
                 Ahlsell Jönköping<span class="time-span">2022 - 2023</span>
               </li>
@@ -84,7 +85,7 @@
     </main>
     <footer>
       <section>
-        <h2>Lorem.</h2>
+        <h2 id="footer_heading" title="Easter egg">Lorem.</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
           ratione rem fuga. Recusandae harum autem, natus nesciunt ut placeat id

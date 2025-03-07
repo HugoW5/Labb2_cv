@@ -1,0 +1,27 @@
+@media print {
+  nav,
+  footer,
+  .theme-toggle {
+    display: none;
+  }
+  body {
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+    word-break: break-all;
+  }
+  * {
+    background: none !important;
+    box-shadow: none !important;
+  }
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

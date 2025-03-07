@@ -84,6 +84,9 @@ main {
 .top-bottom-container li {
   padding: 10px;
 }
+#footer_heading{
+  cursor: pointer;
+}
 .top-bottom-container .time-span {
   margin: 5px;
   padding: 5px;
