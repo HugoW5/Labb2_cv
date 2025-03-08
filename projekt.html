@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+    src="https://kit.fontawesome.com/bcd4d215cb.js"
+    crossorigin="anonymous"
+  ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
+    <script src="portfolio.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="print.css">
     <title>CV - Projekt</title>
   </head>
   <body>
@@ -37,7 +43,7 @@
           assumenda quos eaque perspiciatis maiores?
         </p>
       </div>
-      <div class="projects-container">
+      <div id="projects-container">
         <div class="project">
           <div class="title">
             <h2>Grafritare</h2>
@@ -256,11 +262,14 @@
             </p>
           </div>
         </div>
+        
       </div>
+      <img src="img/loading.gif" id="loading_gif" alt="Läser in">
+      <button id="load_more">Ladda mer</button>
     </main>
     <footer>
       <section>
-        <h2>Lorem.</h2>
+        <h2 id="footer_heading" title="Easter egg">Lorem.</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
           ratione rem fuga. Recusandae harum autem, natus nesciunt ut placeat id

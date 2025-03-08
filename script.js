@@ -56,7 +56,43 @@ async function templateResume() {
         if (data != null) {
           document.getElementById("name_header").innerHTML = data.name;
           document.getElementById("info").innerHTML = data.info;
-          console.log(data);
+
+          if (data.github != undefined) {
+            let a = document.createElement("a");
+            a.target = "_blank";
+            a.id = "github_link";
+            a.href = data.github;
+            a.ariaLabel = "Github";
+            let i = document.createElement("i");
+            i.className = "fa-brands fa-github icon";
+            i.ariaHidden = true;
+            a.appendChild(i);
+            document.getElementById("container-header").appendChild(a);
+          }
+          if (data.linkedin != undefined) {
+            let a = document.createElement("a");
+            a.target = "_blank";
+            a.id = "linkedin_link";
+            a.href = data.linkedin;
+            a.ariaLabel = "Linkedin";
+            let i = document.createElement("i");
+            i.className = "fa-brands fa-linkedin icon";
+            i.ariaHidden = true;
+            a.appendChild(i);
+            document.getElementById("container-header").appendChild(a);
+          }
+          if (data.email != undefined) {
+            let a = document.createElement("a");
+            a.target = "_blank";
+            a.id = "email_link";
+            a.href = "mailto:" + data.email;
+            a.ariaLabel = "Epost";
+            let i = document.createElement("i");
+            i.className = "fa-solid fa-envelope icon";
+            i.ariaHidden = true;
+            a.appendChild(i);
+            document.getElementById("container-header").appendChild(a);
+          }
 
           data.education.forEach((element) => {
             if (element != undefined) {
@@ -90,3 +126,5 @@ async function templateResume() {
     return null;
   }
 }
+
+templateResume();
