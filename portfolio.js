@@ -1,10 +1,11 @@
 document.getElementById("load_more").addEventListener("click", () => {
   fetch("https://api.github.com/users/HugoW5/repos")
     .then((response) => {
-      document.getElementById('loading_gif').style.display = "block";
-      
+      document.getElementById("loading_gif").style.display = "block";
+
       if (!response.ok) {
-        document.getElementById('loading_gif').style.display = "none";
+        document.getElementById("loading_gif").style.display = "none";
+        alert("Fel vid hämtning av projekt");
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       return response.json();
@@ -51,10 +52,8 @@ document.getElementById("load_more").addEventListener("click", () => {
         document.getElementById("projects-container").appendChild(projectDiv);
       });
 
-      document.getElementById('loading_gif').style.display = "none";
-      document.getElementById('load_more').style.display = "none";
-
-
+      document.getElementById("loading_gif").style.display = "none";
+      document.getElementById("load_more").style.display = "none";
     })
     .catch((error) => console.error("Error fetching repositories", error));
 });

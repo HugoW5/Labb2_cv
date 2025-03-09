@@ -1,6 +1,6 @@
 :root {
   --background-color: #ffffff;
-  --secodary-background-color: #b3b3b3;
+  --secodary-background-color: #d1d1d1;
   --text-color: #000000;
   --primary-color: #97caff;
 }
@@ -15,7 +15,7 @@ body:has(#darkmode-toggle:checked) {
   --background-color: #252525;
   --secodary-background-color: #565656;
   --text-color: #ffffff;
-  --primary-color: #1e90ff;
+  --primary-color: #1d73c9;
 }
 
 nav {
@@ -275,4 +275,7 @@ footer a {
 .icon {
   color: black;
   font-size: 28px;
+}
+.wcag-list>li{
+  margin-bottom: 20px;
 }

@@ -36,7 +36,7 @@ document.body.addEventListener("keydown", (e) => {
     console.log(e.key);
     sequenseIndex++;
     if (sequenseIndex == 4) {
-      alert("Du hittade påskäggget");
+      alert("Elit");
       sequenseIndex = 0;
     }
   } else {
@@ -123,8 +123,10 @@ async function templateResume() {
       });
   } catch (err) {
     //console.log(err);
+    document.getElementById("loading").style.display = "none";
     return null;
   }
+  document.getElementById("loading").style.display = "none";
 }
 
 templateResume();

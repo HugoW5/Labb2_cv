@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bcd4d215cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css" />
+    <title>WCAG-redogörelse</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Hem</a>
+      <a href="/projekt.html">Projekt</a>
+      <a href="/kontakt.html">Kontakta mig</a>
+      <label class="theme-toggle" aria-label="Toggle darkmode">
+        <input type="checkbox" id="darkmode-toggle" />
+        <span class="toggle-darkmode"></span>
+      </label>
+    </nav>
+    <main>
+      <div class="top-container">
+        <h1>WCAG-redogörelse</h1>
+        <section>
+          <ul class="wcag-list">
+            <li><strong>Ange sidans språk i koden:</strong> Språket anges korrekt med lang="sv" i HTML-taggen.</li>
+            <li><strong>Ange språkförändringar i koden:</strong> Gör inga språkbyten.</li>
+            <li><strong>Använd inte enbart färg för att förmedla information:</strong> Innehållet är designat så att färg inte är den enda informationsförmedlaren, exempelvis på kontaktsidan har jag en telefonikon brevid telefonnummret.</li>
+            <li><strong>Använd tillräcklig kontrast mellan text och bakgrund:</strong> Alla texter har en kontrast på minst 4,5:1 för att säkerställa läsbarhet. WAVE extension ger inga felmeddelanden om kontrasten.</li>
+            <li><strong>Använd tillräckliga kontraster i komponenter och grafik:</strong> Alla interaktiva element och grafiska komponenter har tillräcklig kontrast.</li>
+            <li><strong>Beskriv med text allt innehåll som inte är text:</strong> Bilder och andra element har beskrivande alt-texter eller aria-label.</li>
+            <li><strong>Gör det möjligt att hoppa förbi återkommande innehåll:</strong>Har inget återkommande innehåll</li>
+            <li><strong>Förmedla information, struktur och relationer i koden:</strong> HTML-koden är semantiskt korrekt och följer en god struktur.</li>
+            <li><strong>Gör det möjligt att pausa, stänga av eller sänka ljud:</strong> Har inga Ljudspelare ller videor.</li>
+            <li><strong>Gör det möjligt att justera tidsbegränsningar:</strong> Har ingen tidsbegränsning.</li>
+            <li><strong>Gör det möjligt att pausa eller stänga av rörelser:</strong> Har inga animationer eller rörliga .</li>
+            <li><strong>Ge förslag på hur fel kan rättas till:</strong> Formulär visar tydliga felmeddelanden och ger förslag på hur de kan åtgärdas.</li>
+            <li><strong>Ge möjlighet att ångra, korrigera eller bekräfta vid viktiga transaktioner:</strong>Har inga "transaktioner".</li>
+            <li><strong>Gör det möjligt att ångra klick:</strong>Finns inga funktioner som kräver detta i hemsidan</li>
+            <li><strong>Ha en meningsfull fokusordning:</strong> Sidans element är ordnade logiskt så att tangentbordsnavigering fungerar korrekt.</li>
+            <li><strong>Markera tydligt vilket fält eller element som är i fokus:</strong> Fokusindikation är tydlig vid tangentbordsnavigering.</li>
+            <li><strong>Märk upp vanliga formulärfält i koden:</strong> Formulärfält har korrekta etiketter för att hjälpa användare och hjälpmedel.</li>
+            <li><strong>Popup-funktioner ska kunna hanteras och stängas av av alla:</strong> Användaren kan stänga popups och modals utan problem.</li>
+            <li><strong>Presentera innehållet i en meningsfull ordning för alla:</strong> Innehållet är strukturerat logiskt i både kod och visuell layout.</li>
+            <li><strong>Se till att innehållet anpassas efter skärmens riktning:</strong> Webbplatsen fungerar i både dator och mobil läge .</li>
+            <li><strong>Se till att det går att öka avstånd mellan tecken, rader, stycken och ord:</strong> Finns ingen inbyggt funktion för detta i hemsidan.</li>
+            <li><strong>Se till att hjälpmedel kan presentera meddelanden som inte är i fokus:</strong> Finns inga saker utanför fokus.</li>
+            <li><strong>Se till att koden validerar:</strong> HTML, CSS och JavaScript validerar.</li>
+            <li><strong>Se till att markören inte fastnar vid tangentbordsnavigation:</strong> Det gör den inte.</li>
+            <li><strong>Se till att skräddarsydda komponenter fungerar i hjälpmedel:</strong> Har inga Anpassade UI-komponenter.</li>
+            <li><strong>Se till att text går att förstora utan problem:</strong> Webbplatsen är användbar vid inzoomning upp till 200 %.</li>
+            <li><strong>Se till att text på knappar och kontroller överensstämmer med maskinläsbara etiketter:</strong> Knappar och interaktiva element har tydliga och beskrivande etiketter.</li>
+            <li><strong>Skapa en flexibel layout som fungerar vid förstoring eller liten skärm:</strong> Layouten anpassar sig smidigt till olika skärmstorlekar.</li>
+            <li><strong>Skapa kortkommandon med varsamhet:</strong> Har inga kortkommandon</li>
+            <li><strong>Skapa tydliga och klickbara fältetiketter/ledtexter:</strong> Formulär och interaktiva element har tydliga etiketter.</li>
+            <li><strong>Utför inga oväntade förändringar vid fokusering:</strong> Fokus leder inte till automatiska förändringar.</li>
+            <li><strong>Utför inga oväntade förändringar vid inmatning:</strong> Ingen inmatning leder till oväntade förändringar.</li>
+            <li><strong>Utveckla systemet så att det går att hantera med enbart tangentbordet:</strong> Alla funktioner kan användas med enbart tangentbordet.</li>
+            <li><strong>Visa var ett fel uppstått och beskriv det tydligt:</strong> Felmeddelanden är tydliga och visas vid rätt fält i kontakt formuläret.</li>
+        </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h2 id="footer_heading" title="Easter egg">Lorem.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+          ratione rem fuga. Recusandae harum autem, natus nesciunt ut placeat id
+          deleniti ipsa commodi obcaecati, quaerat minus atque distinctio beatae
+          tenetur!
+        </p>
+      </section>
+      <section>
+        <h2>Länkar</h2>
+        <ul>
+          <li><a href="/index.html">Hem</a></li>
+          <li><a href="/projekt.html">Projekt</a></li>
+          <li><a href="/kontakt.html">Kontakta mig</a></li>
+          <li><a href="/wcag.html">WCAG-redogörelse</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
