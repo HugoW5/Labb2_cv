@@ -6,22 +6,22 @@
   "email": "hugo05.wakt@gmail.com",
   "workplaces": [
     {
-      "name": "Ahlsell Jönköping",
-      "span": "2022 - 2023"
-    },
-    {
       "name": "Arla Jönköping",
       "span": "2023 - 2025"
+    },
+    {
+      "name": "Ahlsell Jönköping",
+      "span": "2022 - 2023"
     }
   ],
   "education": [
     {
-      "name": "LSB Jönköping",
-      "span": "2021-2024"
-    },
-    {
       "name": "Systemutvecklare.NET",
       "span": "2024-2026"
+    },
+    {
+      "name": "LBS Jönköping",
+      "span": "2021-2024"
     }
   ]
 }
